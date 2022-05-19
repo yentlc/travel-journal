@@ -11,7 +11,7 @@ function App() {
   return (
     <div className='App'>
       <Navbar />
-      {travelCard}
+      <section className='travel-cards'>{travelCard}</section>
     </div>
   );
 }

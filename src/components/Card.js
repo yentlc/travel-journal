@@ -5,7 +5,7 @@ export default function Card(card) {
       <section className='travelInfo'>
         <div className='country'>
           <i class='fa-solid fa-location-dot'></i>
-          <h3 className='country'>{card.location}</h3>
+          <h3>{card.location}</h3>
           <a
             href={card.googleMapsUrl}
             target='_blank'

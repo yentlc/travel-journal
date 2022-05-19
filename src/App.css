@@ -2,20 +2,93 @@
 
 body{
   font-family: "Inter";
+  width: 100%;
 }
 nav{
   position: fixed;
   top: 0;
   width: 100vw;
-  height: fit-content;
+  height: 7rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 2rem;
+  color: white;
   background-color: #F55A5A;
 }
-
-
+nav i{
+  color:white;
+  font-size: 3rem;
+}
+nav .nav-title{
+  font-size: 2rem;
+  font-weight: 500;
+}
+.travel-cards{
+  height: 100vh;
+  margin-top: 300px;
+}
+.travelCard{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  height: fit-content;
+  gap: 2rem;
+  margin: 8rem;
+}
+.travelCard img{
+  width: 500px;
+  height: 700px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.travelInfo{
+  max-width: 1200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+  margin: 3rem;
+}
+.travelInfo .country{
+display: flex;
+justify-content: flex-start;
+align-items: center;
+gap: 2rem;
+font-size: 2rem;
+height: 50px;
+margin: 0;
+}
+.travelInfo .country i{
+  color: #F55A5A;
+  font-size: 2.5rem;
+}
+.travelInfo .country h3{
+  font-weight: 200;
+}
+.travelInfo .country a{
+  font-weight: 200;
+  color: gray;
+  text-decoration: 1px underline;
+}
+.travelInfo .title{
+  font-size: 3.5rem;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.travelInfo .dates{
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin: 0;
+}
+.travelInfo .description{
+  font-size: 1.7rem;
+  font-weight: 300;
+  margin: 0;
+}
 
 @keyframes App-logo-spin {
   from {
