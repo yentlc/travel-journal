@@ -1,22 +1,24 @@
 export default function Card(card) {
   return (
     <section className='travelCard'>
-      <img src={card.imageUrl} alt='city photo' />
+      <img src={card.imageUrl} alt='city' />
       <section className='travelInfo'>
         <div className='country'>
-          <FontAwesomeIcon
-            icon='fa-solid fa-location-dot'
-            className='locationIcon'
-          />
-          <h1>{card.location}</h1>
+          <i class='fa-solid fa-location-dot'></i>
+          <h3 className='country'>{card.location}</h3>
           <a
             href={card.googleMapsUrl}
             target='_blank'
-            rel='noopener noreferrer'
+            rel='noreferrer'
             className='locationLink'>
             View on google maps
           </a>
         </div>
+        <h1 className='title'>{card.title}</h1>
+        <p className='dates'>
+          {card.startDate}-{card.endDate}
+        </p>
+        <p className='description'>{card.description}</p>
       </section>
     </section>
   );
